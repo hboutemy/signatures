@@ -56,6 +56,8 @@
   
   <modules>
     <module>java</module>
+    <module>sun-java</module>
+    <module>ibm-java</module>
   </modules>
 
   <inceptionYear>2009</inceptionYear>
