@@ -118,6 +118,47 @@
                 <version>[1.6,1.7)</version>
               </jdk>
               <classifier>java16</classifier>
+              <includeClasses>
+                <includeClass>java.*</includeClass>
+                <includeClass>javax.accessibility.*</includeClass>
+                <includeClass>javax.activation.*</includeClass>
+                <includeClass>javax.activity.*</includeClass>
+                <includeClass>javax.annotation.*</includeClass>
+                <includeClass>javax.crypto.*</includeClass>
+                <includeClass>javax.imageio.*</includeClass>
+                <includeClass>javax.jws.*</includeClass>
+                <includeClass>javax.lang.model.*</includeClass>
+                <includeClass>javax.management.*</includeClass>
+                <includeClass>javax.naming.*</includeClass>
+                <includeClass>javax.net.*</includeClass>
+                <includeClass>javax.print.*</includeClass>
+                <includeClass>javax.rmi.*</includeClass>
+                <includeClass>javax.script.*</includeClass>
+                <includeClass>javax.security.auth.*</includeClass>
+                <includeClass>javax.security.cert.*</includeClass>
+                <includeClass>javax.security.sasl.*</includeClass>
+                <includeClass>javax.sound.midi.*</includeClass>
+                <includeClass>javax.sound.sampled.*</includeClass>
+                <includeClass>javax.sql.*</includeClass>
+                <includeClass>javax.swing.*</includeClass>
+                <includeClass>javax.tools.*</includeClass>
+                <includeClass>javax.transaction.*</includeClass>
+                <includeClass>javax.xml.*</includeClass>
+                <includeClass>org.ietf.jgss.*</includeClass>
+                <includeClass>org.omg.CORBA.*</includeClass>
+                <includeClass>org.omg.CORBA_2_3.*</includeClass>
+                <includeClass>org.omg.CosNaming.*</includeClass>
+                <includeClass>org.omg.Dynamic.*</includeClass>
+                <includeClass>org.omg.DynamicAny.*</includeClass>
+                <includeClass>org.omg.IOP.*</includeClass>
+                <includeClass>org.omg.Messaging.*</includeClass>
+                <includeClass>org.omg.PortableInterceptor.*</includeClass>
+                <includeClass>org.omg.PortableServer.*</includeClass>
+                <includeClass>org.omg.SendingContext.*</includeClass>
+                <includeClass>org.omg.stub.java.rmi.*</includeClass>
+                <includeClass>org.w3c.dom.*</includeClass>
+                <includeClass>org.xml.sax.*</includeClass>
+              </includeClasses>
             </configuration>
           </execution>
         </executions>
