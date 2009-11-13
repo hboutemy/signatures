@@ -66,6 +66,13 @@
                 <version>[1.2,1.3)</version>
               </jdk>
               <classifier>java12</classifier>
+              <includeClasses>
+                <includeClass>java.*</includeClass>
+                <includeClass>javax.accessibility.*</includeClass>
+                <includeClass>javax.swing.*</includeClass>
+                <includeClass>org.omg.CORBA.*</includeClass>
+                <includeClass>org.omg.CosNaming.*</includeClass>
+              </includeClasses>
             </configuration>
           </execution>
           <execution>
