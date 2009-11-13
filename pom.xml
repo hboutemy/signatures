@@ -58,6 +58,9 @@
     <module>java</module>
     <module>sun-java</module>
     <module>ibm-java</module>
+    <module>apple-java</module>
+    <module>jrockit-java</module>
+    <module>harmony</module>
   </modules>
 
   <inceptionYear>2009</inceptionYear>
