@@ -32,13 +32,13 @@
   </parent>
 
   <groupId>org.codehaus.mojo.signature</groupId>
-  <artifactId>ibm-java</artifactId>
+  <artifactId>jrockit-java</artifactId>
   <packaging>pom</packaging>
 
-  <name>IBM Java Runtime Signatures</name>
+  <name>JRockit Java Runtime Signatures</name>
 
   <description>
-    Java Runtime Signatures including IBM implementation classes.
+    Java Runtime Signatures including JRockit implementation classes.
   </description>
 
   <build>
@@ -56,34 +56,6 @@
         </configuration>
         <executions>
           <execution>
-            <id>java12</id>
-            <phase>package</phase>
-            <goals>
-              <goal>build</goal>
-            </goals>
-            <configuration>
-              <jdk>
-                <version>[1.2,1.3)</version>
-                <vendor>ibm</vendor>
-              </jdk>
-              <classifier>java12</classifier>
-            </configuration>
-          </execution>
-          <execution>
-            <id>java13</id>
-            <phase>package</phase>
-            <goals>
-              <goal>build</goal>
-            </goals>
-            <configuration>
-              <jdk>
-                <version>[1.3,1.4)</version>
-                <vendor>ibm</vendor>
-              </jdk>
-              <classifier>java13</classifier>
-            </configuration>
-          </execution>
-          <execution>
             <id>java14</id>
             <phase>package</phase>
             <goals>
@@ -92,7 +64,7 @@
             <configuration>
               <jdk>
                 <version>[1.4,1.5)</version>
-                <vendor>ibm</vendor>
+                <vendor>jrockit</vendor>
               </jdk>
               <classifier>java14</classifier>
             </configuration>
@@ -106,7 +78,7 @@
             <configuration>
               <jdk>
                 <version>[1.5,1.6)</version>
-                <vendor>ibm</vendor>
+                <vendor>jrockit</vendor>
               </jdk>
               <classifier>java15</classifier>
             </configuration>
@@ -120,7 +92,7 @@
             <configuration>
               <jdk>
                 <version>[1.6,1.7)</version>
-                <vendor>ibm</vendor>
+                <vendor>jrockit</vendor>
               </jdk>
               <classifier>java16</classifier>
             </configuration>
