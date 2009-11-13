@@ -56,20 +56,6 @@
         </configuration>
         <executions>
           <execution>
-            <id>java12</id>
-            <phase>package</phase>
-            <goals>
-              <goal>build</goal>
-            </goals>
-            <configuration>
-              <jdk>
-                <version>[1.2,1.3)</version>
-                <vendor>ibm</vendor>
-              </jdk>
-              <classifier>java12</classifier>
-            </configuration>
-          </execution>
-          <execution>
             <id>java13</id>
             <phase>package</phase>
             <goals>
