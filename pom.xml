@@ -64,23 +64,9 @@
             <configuration>
               <jdk>
                 <version>[1.5,1.6)</version>
-                <vendor>ibm</vendor>
+                <vendor>apache</vendor>
               </jdk>
               <classifier>java15</classifier>
-            </configuration>
-          </execution>
-          <execution>
-            <id>java16</id>
-            <phase>package</phase>
-            <goals>
-              <goal>build</goal>
-            </goals>
-            <configuration>
-              <jdk>
-                <version>[1.6,1.7)</version>
-                <vendor>ibm</vendor>
-              </jdk>
-              <classifier>java16</classifier>
             </configuration>
           </execution>
         </executions>
