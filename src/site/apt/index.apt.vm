@@ -108,12 +108,49 @@ Usage
     <classpath path="lib/animal-sniffer-ant-tasks-${animal-sniffer-version}.jar"/>
   </typedef>
   <target name="check-${project.artifactId}" depends="compile">
-    <as:check-signature signature=".../${project.artifactId}-${project.version}.sig">
+    <as:check-signature signature="${project.artifactId}-${project.version}.signature">
       <path path="classes"/>
     </as:check-signature>
   </target>
 </project>
 ---
+
+  Alternatively, you can use {{{http://maven.apache.org/ant-tasks/index.html}Maven ANT Tasks}} to download the signatures
+  for you automatically, e.g.
+
+---
+<project xmlns:as="antlib:org.codehaus.mojo.animal_sniffer" xmlns:artifact="antlib:org.apache.maven.artifact.ant">
+  <!-- define Maven ANT Tasks -->
+  <typedef uri="antlib:org.apache.maven.artifact.ant">
+    <classpath path="lib/maven-ant-tasks-2.0.9.jar"/>
+  </typedef>
+
+  <!-- define Animal Sniffer ANT Tasks -->
+  <typedef uri="antlib:org.codehaus.mojo.animal_sniffer">
+    <classpath path="lib/animal-sniffer-ant-tasks-${animal-sniffer-version}.jar"/>
+  </typedef>
+
+  <!-- define local repository location -->
+  <condition property="maven.repo.local" value="${maven.repo.local}" else="${user.home}/.m2/repository">
+    <isset property="maven.repo.local"/>
+  </condition>
+
+  <!-- configure local repository -->
+  <artifact:localRepository id="local.repository" path="${maven.repo.local}"/>
+
+  <!-- declare dependency -->
+  <artifact:dependencies filesetId="signatures.fileset">
+    <dependency groupId="${project.groupId}" artifactId="${project.artifactId}" version="${project.version}" type="signature"/>
+  </artifact:dependencies>
+
+  <target name="check-${project.artifactId}" depends="compile">
+    <as:check-signature signature="${${project.groupId}:${project.artifactId}:signature}">
+      <path path="classes"/>
+    </as:check-signature>
+  </target>
+</project>
+---
+
 
 * With Animal Sniffer Enforcer Rule Plugin
 
