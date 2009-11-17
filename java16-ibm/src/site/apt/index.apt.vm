@@ -35,6 +35,10 @@ Introduction
 
 Usage
 
+  This signature can be used by {{{../../animal-sniffer-maven-plugin}Animal Sniffer Maven Plugin}},
+  {{{../../animal-sniffer/animal-sniffer-ant-tasks}Animal Sniffer ANT Tasks}} or
+  {{{../../animal-sniffer/animal-sniffer-enforcer-rule}Animal Sniffer Enforcer Rule}}
+
 * Downloading
 
   This signature is hosted on the {{{http://repo1.maven.org}Maven Central Repository}} 
@@ -90,6 +94,24 @@ Usage
     ...
   </build>
   ...
+</project>
+---
+
+* With Animal Sniffer ANT Tasks
+
+  Download the signature from the {{{http://repo1.maven.org/maven2/org/codehaus/mojo/signature/${project.artifactId}/${project.version}}Maven Central Repository}}
+  and configure the <<<check-signature>>> task to use the signature, e.g.
+
+---
+<project xmlns:as="antlib:org.codehaus.mojo.animal_sniffer">
+  <typedef uri="antlib:org.codehaus.mojo.animal_sniffer">
+    <classpath path="lib/animal-sniffer-ant-tasks-${animal-sniffer-version}.jar"/>
+  </typedef>
+  <target name="check-${project.artifactId}" depends="compile">
+    <as:check-signature signature=".../${project.artifactId}-${project.version}.sig">
+      <path path="classes"/>
+    </as:check-signature>
+  </target>
 </project>
 ---
 
