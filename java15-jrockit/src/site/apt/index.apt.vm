@@ -29,13 +29,13 @@
  2009-11-17
  -----
 
-* Introduction
+Introduction
 
   ${project.description}
 
-* Usage
+Usage
 
-** Downloading
+* Downloading
 
   This signature is hosted on the {{{http://repo1.maven.org}Maven Central Repository}}} 
   with the following coordinates:
@@ -48,7 +48,7 @@
 | <<Version>>        | <<<${project.version}>>>     |
 *--------------------+------------------------------+
 
-** With Animal Sniffer Maven Plugin 
+* With Animal Sniffer Maven Plugin 
 
   To check your project against this signature using the Animal Sniffer Maven Plugin, 
   include the following configuration in your <<<pom.xml>>>
@@ -93,7 +93,7 @@
 </project>
 ---
 
-** With Animal Sniffer Enforcer Rule Plugin
+* With Animal Sniffer Enforcer Rule Plugin
 
   To check your project against this signature using the Animal Sniffer Enforcer Rule,
   include the following configuration in your <<<pom.xml>>>
