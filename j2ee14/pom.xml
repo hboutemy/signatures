@@ -32,7 +32,7 @@
   </parent>
 
   <artifactId>j2ee14</artifactId>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
   <name>Java 2 Enterprise Edition 1.4 Runtime Signatures</name>
 
@@ -139,6 +139,10 @@
     </dependency>
   </dependencies>
 
+  <properties>
+    <!-- remove when 1.4 is released -->
+    <animal-sniffer-version>1.4-SNAPSHOT</animal-sniffer-version>
+  </properties>
 
   <build>
     <plugins>
