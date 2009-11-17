@@ -95,6 +95,8 @@ Animal Scents
 *-------------------------------------------------+---------------------+-------------------------------+
 | <<Java Enterprise Edition Runtime Signatures>>  |                     | <Signatures of the Java Enterprise Edition runtime.>
 *-------------------------------------------------+---------------------+-------------------------------+
+| {{{./j2ee14/}j2ee14}}                           | 1.0-SNAPSHOT        | Java 2 Enterprise Edition version 1.4 signatures
+*-------------------------------------------------+---------------------+-------------------------------+
 | <<Java Standard Edition Runtime Signatures>>    |                     | <Signatures of the Java Standard Edition runtime.>
 *-------------------------------------------------+---------------------+-------------------------------+
 | {{{./java12/}java12}}                           | 1.0-SNAPSHOT        | Generic JavaSE version 1.2 signatures
