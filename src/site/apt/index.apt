@@ -54,29 +54,29 @@ Animal Scents
 *-------------------------------------------------+---------------------+-------------------------------+
 | <<Java Standard Edition Runtime Signatures>>    |                     | <Signatures of the Java Standard Edition runtime.>
 *-------------------------------------------------+---------------------+-------------------------------+
-| {{{java14}java14}}                              | 1.0-SNAPSHOT        | Generic JavaSE version 1.4 signatures
+| {{{./java14/}java14}}                           | 1.0-SNAPSHOT        | Generic JavaSE version 1.4 signatures
 *-------------------------------------------------+---------------------+-------------------------------+
-| {{{java15}java15}}                              | 1.0-SNAPSHOT        | Generic JavaSE version 1.5 signatures
+| {{{./java15/}java15}}                           | 1.0-SNAPSHOT        | Generic JavaSE version 1.5 signatures
 *-------------------------------------------------+---------------------+-------------------------------+
-| {{{java16}java16}}                              | 1.0-SNAPSHOT        | Generic JavaSE version 1.6 signatures
+| {{{./java16/}java16}}                           | 1.0-SNAPSHOT        | Generic JavaSE version 1.6 signatures
 *-------------------------------------------------+---------------------+-------------------------------+
-| {{{java14-sun}java14-sun}}                      | 1.0-SNAPSHOT        | Sun JavaSE version 1.4 signatures
+| {{{./java14-sun/}java14-sun}}                   | 1.0-SNAPSHOT        | Sun JavaSE version 1.4 signatures
 *-------------------------------------------------+---------------------+-------------------------------+
-| {{{java15-sun}java15-sun}}                      | 1.0-SNAPSHOT        | Sun JavaSE version 1.5 signatures
+| {{{./java15-sun/}java15-sun}}                   | 1.0-SNAPSHOT        | Sun JavaSE version 1.5 signatures
 *-------------------------------------------------+---------------------+-------------------------------+
-| {{{java16-sun}java16-sun}}                      | 1.0-SNAPSHOT        | Sun JavaSE version 1.6 signatures
+| {{{./java16-sun/}java16-sun}}                   | 1.0-SNAPSHOT        | Sun JavaSE version 1.6 signatures
 *-------------------------------------------------+---------------------+-------------------------------+
-| {{{java15-ibm}java15-ibm}}                      | 1.0-SNAPSHOT        | IBM JavaSE version 1.5 signatures
+| {{{./java15-ibm/}java15-ibm}}                   | 1.0-SNAPSHOT        | IBM JavaSE version 1.5 signatures
 *-------------------------------------------------+---------------------+-------------------------------+
-| {{{java16-ibm}java16-ibm}}                      | 1.0-SNAPSHOT        | IBM JavaSE version 1.6 signatures
+| {{{./java16-ibm/}java16-ibm}}                   | 1.0-SNAPSHOT        | IBM JavaSE version 1.6 signatures
 *-------------------------------------------------+---------------------+-------------------------------+
-| {{{java15-jrockit}java15-jrockit}}              | 1.0-SNAPSHOT        | JRockit JavaSE version 1.5 signatures
+| {{{./java15-jrockit/}java15-jrockit}}           | 1.0-SNAPSHOT        | JRockit JavaSE version 1.5 signatures
 *-------------------------------------------------+---------------------+-------------------------------+
-| {{{java16-jrockit}java16-jrockit}}              | 1.0-SNAPSHOT        | JRockit JavaSE version 1.6 signatures
+| {{{./java16-jrockit/}java16-jrockit}}           | 1.0-SNAPSHOT        | JRockit JavaSE version 1.6 signatures
 *-------------------------------------------------+---------------------+-------------------------------+
-| {{{java16-apple}java16-apple}}                  | 1.0-SNAPSHOT        | Apple JavaSE version 1.6 signatures
+| {{{./java16-apple/}java16-apple}}               | 1.0-SNAPSHOT        | Apple JavaSE version 1.6 signatures
 *-------------------------------------------------+---------------------+-------------------------------+
-| {{{java15-harmony}java15-harmony}}              | 1.0-SNAPSHOT        | Apache Harmony JavaSE version 1.5 signatures
+| {{{./java15-harmony/}java15-harmony}}           | 1.0-SNAPSHOT        | Apache Harmony JavaSE version 1.5 signatures
 *-------------------------------------------------+---------------------+-------------------------------+
 | <<Java Enterprise Edition Runtime Signatures>>  |                     | <Signatures of the Java Enterprise Edition runtime.>
 *-------------------------------------------------+---------------------+-------------------------------+
@@ -97,17 +97,17 @@ Animal Scents
 *-------------------------------------------------+---------------------+-------------------------------+
 | <<Java Standard Edition Runtime Signatures>>    |                     | <Signatures of the Java Standard Edition runtime.>
 *-------------------------------------------------+---------------------+-------------------------------+
-| {{{java12}java12}}                              | 1.0-SNAPSHOT        | Generic JavaSE version 1.2 signatures
+| {{{./java12/}java12}}                           | 1.0-SNAPSHOT        | Generic JavaSE version 1.2 signatures
 *-------------------------------------------------+---------------------+-------------------------------+
-| {{{java13}java13}}                              | 1.0-SNAPSHOT        | Generic JavaSE version 1.3 signatures
+| {{{./java13/}java13}}                           | 1.0-SNAPSHOT        | Generic JavaSE version 1.3 signatures
 *-------------------------------------------------+---------------------+-------------------------------+
-| {{{java12-sun}java12-sun}}                      | 1.0-SNAPSHOT        | Sun JavaSE version 1.2 signatures
+| {{{./java12-sun/}java12-sun}}                   | 1.0-SNAPSHOT        | Sun JavaSE version 1.2 signatures
 *-------------------------------------------------+---------------------+-------------------------------+
-| {{{java13-sun}java13-sun}}                      | 1.0-SNAPSHOT        | Sun JavaSE version 1.3 signatures
+| {{{./java13-sun/}java13-sun}}                   | 1.0-SNAPSHOT        | Sun JavaSE version 1.3 signatures
 *-------------------------------------------------+---------------------+-------------------------------+
-| {{{java14-ibm}java14-ibm}}                      | 1.0-SNAPSHOT        | IBM JavaSE version 1.4 signatures
+| {{{./java14-ibm/}java14-ibm}}                   | 1.0-SNAPSHOT        | IBM JavaSE version 1.4 signatures
 *-------------------------------------------------+---------------------+-------------------------------+
-| {{{java14-jrockit}java14-jrockit}}              | 1.0-SNAPSHOT        | JRockit JavaSE version 1.4 signatures
+| {{{./java14-jrockit/}java14-jrockit}}           | 1.0-SNAPSHOT        | JRockit JavaSE version 1.4 signatures
 *-------------------------------------------------+---------------------+-------------------------------+
 | <<Other Runtime Signatures>>                    |                     | <Signatures of other APIs.>
 *-------------------------------------------------+---------------------+-------------------------------+
