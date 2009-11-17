@@ -28,7 +28,7 @@
     <menu name="Overview">
       <item name="Introduction" href="index.html"/>
     </menu>
-    <menu ref="Project Information">
+    <menu name="Project Information">
       <item name="Source Code" href="source-repository.html"/>
       <item name="Mailing Lists" href="mail-lists.html"/>
       <item name="Issue Tracking" href="issue-tracking.html"/>
