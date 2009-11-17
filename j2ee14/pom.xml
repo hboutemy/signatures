@@ -31,78 +31,146 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>java14</artifactId>
-  <packaging>pom</packaging>
+  <artifactId>j2ee14</artifactId>
+  <packaging>jar</packaging>
 
-  <name>Generic Java 1.4 Runtime Signatures</name>
+  <name>Java 2 Enterprise Edition 1.4 Runtime Signatures</name>
+
+  <prerequisites>
+    <maven>2.0.9</maven>
+  </prerequisites>
 
   <description>
-    Java 1.4 Runtime Signatures excluding vendor specific implementation classes.
+    Java 2 Enterprise Edition Version 1.4 Runtime Signatures.
   </description>
 
   <scm>
-    <connection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/java14</connection>
-    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/java14</developerConnection>
-    <url>http://fisheye.codehaus.org/browse/mojo/trunk/signatures/java14</url>
+    <connection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/j2ee14</connection>
+    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/j2ee14</developerConnection>
+    <url>http://fisheye.codehaus.org/browse/mojo/trunk/signatures/j2ee14</url>
   </scm>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.apache.geronimo.specs</groupId>
+        <artifactId>geronimo-j2ee_1.4_spec</artifactId>
+        <version>1.1</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-j2ee-connector_1.5_spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-j2ee-jacc_1.0_spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-j2ee-management_1.0_spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-jta_1.0.1B_spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-ejb_2.1_spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-jsp_2.0_spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-qname_1.1_spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-j2ee-deployment_1.1_spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-activation_1.0.2_spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-saaj_1.1_spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-jaxr_1.0_spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-jaxrpc_1.1_spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-corba_2.3_spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-jms_1.1_spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-servlet_2.4_spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-javamail_1.3.1_spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-commonj_1.1_spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.mojo.signature</groupId>
+      <artifactId>java14</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <type>signature</type>
+    </dependency>
+  </dependencies>
+
 
   <build>
     <plugins>
       <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <excludes>
+            <exclude>**</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+      <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>animal-sniffer-maven-plugin</artifactId>
         <configuration>
-          <includeJavaHome>true</includeJavaHome>
-          <includeModuleClasses>false</includeModuleClasses>
-          <excludeDependencies>
-            <excludeDependency>*:*:*:*:*</excludeDependency>
-          </excludeDependencies>
-          <skipIfNoJavaHome>false</skipIfNoJavaHome>
+          <includeJavaHome>false</includeJavaHome>
+          <includeModuleClasses>true</includeModuleClasses>
+          <includeSignatures>
+            <includeSignature>
+              <groupId>org.codehaus.mojo.signature</groupId>
+              <artifactId>java14</artifactId>
+              <version>1.0-SNAPSHOT</version>
+            </includeSignature>
+          </includeSignatures>
         </configuration>
         <executions>
           <execution>
-            <id>java14</id>
+            <id>j2ee14</id>
             <phase>package</phase>
             <goals>
               <goal>build</goal>
             </goals>
-            <configuration>
-              <jdk>
-                <version>[1.4,1.5)</version>
-              </jdk>
-              <includeClasses>
-                <includeClass>java.*</includeClass>
-                <includeClass>javax.accessibility.*</includeClass>
-                <includeClass>javax.crypto.*</includeClass>
-                <includeClass>javax.imageio.*</includeClass>
-                <includeClass>javax.naming.*</includeClass>
-                <includeClass>javax.net.*</includeClass>
-                <includeClass>javax.print.*</includeClass>
-                <includeClass>javax.rmi.*</includeClass>
-                <includeClass>javax.security.auth.*</includeClass>
-                <includeClass>javax.security.cert.*</includeClass>
-                <includeClass>javax.sound.midi.*</includeClass>
-                <includeClass>javax.sound.sampled.*</includeClass>
-                <includeClass>javax.sql.*</includeClass>
-                <includeClass>javax.swing.*</includeClass>
-                <includeClass>javax.transaction.*</includeClass>
-                <includeClass>javax.xml.*</includeClass>
-                <includeClass>org.ietf.jgss.*</includeClass>
-                <includeClass>org.omg.CORBA.*</includeClass>
-                <includeClass>org.omg.CORBA_2_3.*</includeClass>
-                <includeClass>org.omg.CosNaming.*</includeClass>
-                <includeClass>org.omg.Dynamic.*</includeClass>
-                <includeClass>org.omg.DynamicAny.*</includeClass>
-                <includeClass>org.omg.IOP.*</includeClass>
-                <includeClass>org.omg.Messaging.*</includeClass>
-                <includeClass>org.omg.PortableInterceptor.*</includeClass>
-                <includeClass>org.omg.PortableServer.*</includeClass>
-                <includeClass>org.omg.SendingContext.*</includeClass>
-                <includeClass>org.omg.stub.java.rmi.*</includeClass>
-                <includeClass>org.w3c.dom.*</includeClass>
-                <includeClass>org.xml.sax.*</includeClass>
-              </includeClasses>
-            </configuration>
           </execution>
         </executions>
       </plugin>
