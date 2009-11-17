@@ -26,20 +26,25 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.codehaus.mojo</groupId>
+    <groupId>org.codehaus.mojo.signature</groupId>
     <artifactId>animal-scents-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>org.codehaus.mojo.signature</groupId>
-  <artifactId>harmony</artifactId>
+  <artifactId>java15-harmony</artifactId>
   <packaging>pom</packaging>
 
-  <name>Apache Harmony Java Runtime Signatures</name>
+  <name>Apache Harmony Java 1.5 Runtime Signatures</name>
 
   <description>
-    Java Runtime Signatures including Apache Harmony implementation classes.
+    Java 1.5 Runtime Signatures including Apache Harmony implementation classes.
   </description>
+
+  <scm>
+    <connection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/java15-harmony</connection>
+    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/java15-harmony</developerConnection>
+    <url>http://fisheye.codehaus.org/browse/mojo/trunk/signatures/java15-harmony</url>
+  </scm>
 
   <build>
     <plugins>
@@ -52,7 +57,7 @@
           <excludeDependencies>
             <excludeDependency>*:*:*:*:*</excludeDependency>
           </excludeDependencies>
-          <skipIfNoJavaHome>true</skipIfNoJavaHome>
+          <skipIfNoJavaHome>false</skipIfNoJavaHome>
         </configuration>
         <executions>
           <execution>
@@ -66,7 +71,6 @@
                 <version>[1.5,1.6)</version>
                 <vendor>apache</vendor>
               </jdk>
-              <classifier>java15</classifier>
             </configuration>
           </execution>
         </executions>
