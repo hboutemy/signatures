@@ -26,20 +26,25 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.codehaus.mojo</groupId>
+    <groupId>org.codehaus.mojo.signature</groupId>
     <artifactId>animal-scents-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>org.codehaus.mojo.signature</groupId>
-  <artifactId>apple-java</artifactId>
+  <artifactId>java16-apple</artifactId>
   <packaging>pom</packaging>
 
-  <name>Apple Java Runtime Signatures</name>
+  <name>Apple Java 1.6 Runtime Signatures</name>
 
   <description>
-    Java Runtime Signatures including Apple implementation classes.
+    Java 1.6 Runtime Signatures including Apple implementation classes.
   </description>
+
+  <scm>
+    <connection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/java16-apple</connection>
+    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/java16-apple</developerConnection>
+    <url>http://fisheye.codehaus.org/browse/mojo/trunk/signatures/java16-apple</url>
+  </scm>
 
   <build>
     <plugins>
@@ -52,7 +57,7 @@
           <excludeDependencies>
             <excludeDependency>*:*:*:*:*</excludeDependency>
           </excludeDependencies>
-          <skipIfNoJavaHome>true</skipIfNoJavaHome>
+          <skipIfNoJavaHome>false</skipIfNoJavaHome>
         </configuration>
         <executions>
           <execution>
@@ -66,7 +71,6 @@
                 <version>[1.6,1.7)</version>
                 <vendor>apple</vendor>
               </jdk>
-              <classifier>java16</classifier>
             </configuration>
           </execution>
         </executions>
