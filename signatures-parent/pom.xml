@@ -70,9 +70,9 @@
   </issueManagement>
 
   <scm>
-    <connection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/animal-scents</connection>
-    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/animal-scents</developerConnection>
-    <url>http://fisheye.codehaus.org/browse/mojo/trunk/signatures/animal-scents</url>
+    <connection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/signatures-parent</connection>
+    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/signatures-parent</developerConnection>
+    <url>http://fisheye.codehaus.org/browse/mojo/trunk/signatures/signatures-parent</url>
   </scm>
 
   <developers>
