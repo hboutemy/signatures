@@ -92,6 +92,23 @@
       </roles>
       <timezone>0</timezone>
     </developer>
+    <developer>
+      <name>Arnaud Heritier</name>
+      <email>aheritier (at) apache (dot) org</email>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </developer>
+    <developer>
+      <name>David J. M. Karlsen</name>
+      <email>david@codehaus.org</email>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>1</timezone>
+    </developer>
+
   </developers>
 
   <properties>
