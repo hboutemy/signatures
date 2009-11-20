@@ -31,7 +31,7 @@
   </parent>
 
   <artifactId>java16-sun</artifactId>
-  <version>1.7</version>
+  <version>1.8-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Sun Java 1.6 Runtime Signatures</name>
@@ -41,9 +41,9 @@
   </description>
 
   <scm>
-    <connection>scm:svn:https://svn.codehaus.org/mojo/tags/java16-sun-1.7</connection>
-    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/tags/java16-sun-1.7</developerConnection>
-    <url>http://fisheye.codehaus.org/browse/mojo/tags/java16-sun-1.7</url>
+    <connection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/java16-sun</connection>
+    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/java16-sun</developerConnection>
+    <url>http://fisheye.codehaus.org/browse/mojo/trunk/signatures/java16-sun</url>
   </scm>
 
   <build>
