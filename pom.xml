@@ -32,6 +32,7 @@
   </parent>
 
   <artifactId>java13-sun</artifactId>
+  <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Sun Java 1.3 Runtime Signatures</name>
