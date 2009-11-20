@@ -28,7 +28,7 @@
   <parent>
     <groupId>org.codehaus.mojo.signature</groupId>
     <artifactId>signatures-parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
   </parent>
 
   <artifactId>java13-ibm</artifactId>
