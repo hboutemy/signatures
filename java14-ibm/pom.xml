@@ -31,7 +31,7 @@
   </parent>
 
   <artifactId>java14-ibm</artifactId>
-  <version>1.0</version>
+  <version>1.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>IBM Java 1.4 Runtime Signatures</name>
@@ -41,9 +41,9 @@
   </description>
 
   <scm>
-    <connection>scm:svn:https://svn.codehaus.org/mojo/tags/java14-ibm-1.0</connection>
-    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/tags/java14-ibm-1.0</developerConnection>
-    <url>http://fisheye.codehaus.org/browse/mojo/tags/java14-ibm-1.0</url>
+    <connection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/java14-ibm</connection>
+    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/java14-ibm</developerConnection>
+    <url>http://fisheye.codehaus.org/browse/mojo/trunk/signatures/java14-ibm</url>
   </scm>
 
   <build>
