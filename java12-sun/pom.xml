@@ -31,7 +31,7 @@
   </parent>
 
   <artifactId>java12-sun</artifactId>
-  <version>1.0</version>
+  <version>1.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Sun Java 1.2 Runtime Signatures</name>
@@ -41,9 +41,9 @@
   </description>
 
   <scm>
-    <connection>scm:svn:https://svn.codehaus.org/mojo/tags/java12-sun-1.0</connection>
-    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/tags/java12-sun-1.0</developerConnection>
-    <url>http://fisheye.codehaus.org/browse/mojo/tags/java12-sun-1.0</url>
+    <connection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/java12-sun</connection>
+    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/java12-sun</developerConnection>
+    <url>http://fisheye.codehaus.org/browse/mojo/trunk/signatures/java12-sun</url>
   </scm>
 
   <build>
