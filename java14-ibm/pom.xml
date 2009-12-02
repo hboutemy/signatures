@@ -28,6 +28,7 @@
     <groupId>org.codehaus.mojo.signature</groupId>
     <artifactId>signatures-parent</artifactId>
     <version>1.0</version>
+    <relativePath>../signatures-parent</relativePath>
   </parent>
 
   <artifactId>java14-ibm</artifactId>

@@ -29,6 +29,7 @@
     <groupId>org.codehaus.mojo.signature</groupId>
     <artifactId>signatures-parent</artifactId>
     <version>1.1-SNAPSHOT</version>
+    <relativePath>../signatures-parent</relativePath>
   </parent>
 
   <artifactId>j2ee14</artifactId>
@@ -142,14 +143,6 @@
 
   <build>
     <plugins>
-      <plugin>
-        <artifactId>maven-jar-plugin</artifactId>
-        <configuration>
-          <excludes>
-            <exclude>**</exclude>
-          </excludes>
-        </configuration>
-      </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>animal-sniffer-maven-plugin</artifactId>

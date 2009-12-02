@@ -22,30 +22,49 @@
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
   THE SOFTWARE.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.codehaus.mojo.signature</groupId>
     <artifactId>signatures-parent</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <relativePath>../signatures-parent</relativePath>
   </parent>
 
-  <artifactId>java16-apple</artifactId>
-  <version>1.1-SNAPSHOT</version>
+  <artifactId>javaee5</artifactId>
+  <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>Apple Java 1.6 Runtime Signatures</name>
+  <name>Java Enterprise Edition 5.0 Runtime Signatures</name>
+
+  <prerequisites>
+    <maven>2.0.9</maven>
+  </prerequisites>
 
   <description>
-    Java 1.6 Runtime Signatures including Apple implementation classes.
+    Java Enterprise Edition Version 5.0 Runtime Signatures.
   </description>
 
   <scm>
-    <connection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/java16-apple</connection>
-    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/java16-apple</developerConnection>
-    <url>http://fisheye.codehaus.org/browse/mojo/trunk/signatures/java16-apple</url>
+    <connection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/javaee5</connection>
+    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/javaee5</developerConnection>
+    <url>http://fisheye.codehaus.org/browse/mojo/trunk/signatures/javaee5</url>
   </scm>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.openejb</groupId>
+      <artifactId>javaee-api</artifactId>
+      <version>5.0-2</version>
+    </dependency> 
+    <dependency>
+      <groupId>org.codehaus.mojo.signature</groupId>
+      <artifactId>java15</artifactId>
+      <version>1.0</version>
+      <type>signature</type>
+    </dependency>
+  </dependencies>
 
   <build>
     <plugins>
@@ -53,26 +72,26 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>animal-sniffer-maven-plugin</artifactId>
         <configuration>
-          <includeJavaHome>true</includeJavaHome>
-          <includeModuleClasses>false</includeModuleClasses>
-          <excludeDependencies>
-            <excludeDependency>*:*:*:*:*</excludeDependency>
-          </excludeDependencies>
-          <skipIfNoJavaHome>false</skipIfNoJavaHome>
+          <includeJavaHome>false</includeJavaHome>
+          <includeModuleClasses>true</includeModuleClasses>
+          <includeSignatures>
+            <includeSignature>
+              <groupId>org.codehaus.mojo.signature</groupId>
+              <artifactId>java15</artifactId>
+              <version>1.0</version>
+            </includeSignature>
+          </includeSignatures>
+          <excludeClasses>
+            <excludeClass>org.apache.geronimo.mail.*</excludeClass>
+          </excludeClasses>
         </configuration>
         <executions>
           <execution>
-            <id>java16</id>
+            <id>javaee5</id>
             <phase>package</phase>
             <goals>
               <goal>build</goal>
             </goals>
-            <configuration>
-              <jdk>
-                <version>[1.6,1.7)</version>
-                <vendor>apple</vendor>
-              </jdk>
-            </configuration>
           </execution>
         </executions>
       </plugin>
