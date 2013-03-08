@@ -27,7 +27,7 @@
   <parent>
     <groupId>org.codehaus.mojo</groupId>
     <artifactId>mojo-parent</artifactId>
-    <version>23</version>
+    <version>31</version>
   </parent>
 
   <groupId>org.codehaus.mojo.signature</groupId>
@@ -107,12 +107,20 @@
       </roles>
       <timezone>1</timezone>
     </developer>
+    <developer>
+      <name>Tony Chemit</name>
+      <email>david (at) codehaus (dot) org</email>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>Europe/Paris</timezone>
+    </developer>
 
   </developers>
 
   <properties>
     <!-- referenced from the sigantures index.apt.vm -->
-    <animal-sniffer-version>1.4</animal-sniffer-version>
+    <animal-sniffer-version>1.9</animal-sniffer-version>
   </properties>
 
   <build>
