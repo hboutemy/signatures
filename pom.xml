@@ -32,7 +32,7 @@
 
   <groupId>org.codehaus.mojo.signature</groupId>
   <artifactId>signatures-parent</artifactId>
-  <version>1.2-SNAPSHOT</version>
+  <version>1.2</version>
   <packaging>pom</packaging>
 
   <name>API Signatures Parent project</name>
@@ -69,9 +69,9 @@
   </issueManagement>
 
   <scm>
-    <connection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/signatures-parent</connection>
-    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/signatures-parent</developerConnection>
-    <url>http://fisheye.codehaus.org/browse/mojo/trunk/signatures/signatures-parent</url>
+    <connection>scm:svn:https://svn.codehaus.org/mojo/tags/signatures-parent-1.2</connection>
+    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/tags/signatures-parent-1.2</developerConnection>
+    <url>http://fisheye.codehaus.org/browse/mojo/tags/signatures-parent-1.2</url>
   </scm>
 
   <developers>
