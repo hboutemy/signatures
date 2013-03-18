@@ -32,7 +32,7 @@
   </parent>
 
   <artifactId>java17</artifactId>
-  <version>1.0</version>
+  <version>1.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Generic Java 1.7 Runtime Signatures</name>
@@ -42,9 +42,9 @@
   </description>
 
   <scm>
-    <connection>scm:svn:https://svn.codehaus.org/mojo/tags/java17-1.0</connection>
-    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/tags/java17-1.0</developerConnection>
-    <url>http://fisheye.codehaus.org/browse/mojo/tags/java17-1.0</url>
+    <connection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/java17</connection>
+    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/trunk/signatures/java17</developerConnection>
+    <url>http://fisheye.codehaus.org/browse/mojo/trunk/signatures/java17</url>
   </scm>
 
   <build>
