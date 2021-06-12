@@ -23,15 +23,27 @@
   THE SOFTWARE. 
 -->
 <project>
+  <custom>
+    <fluidoSkin>
+      <gitHub>
+        <projectId>mojohaus/signatures</projectId>
+      </gitHub>
+    </fluidoSkin>
+  </custom>
+
   <body>
-    <menu ref="parent"/>
+    <breadcrumbs>
+      <item name="MojoHaus" href="https://www.mojohaus.org/"/>
+      <item name="API Signatures" href="${this.url}" />
+    </breadcrumbs>
+
     <menu name="Overview">
       <item name="Introduction" href="index.html"/>
     </menu>
     <menu name="Project Information">
-      <item name="Source Code" href="source-repository.html"/>
-      <item name="Mailing Lists" href="mail-lists.html"/>
-      <item name="Issue Tracking" href="issue-tracking.html"/>
+      <item name="Source Code" href="scm.html"/>
+      <item name="Mailing Lists" href="mailing-lists.html"/>
+      <item name="Issue Tracking" href="issue-management.html"/>
     </menu>
   </body>
 </project>
